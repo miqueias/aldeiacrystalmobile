@@ -1,0 +1,23 @@
+<ion-view title="Login" hide-nav-bar="true" id="login">
+  <ion-content class="login" padding="true" class="manual-ios-statusbar-padding" scroll="false">
+    <form id="form" class="list">
+      <div class="spacer" style="width: 300px; height: 160px;"></div>
+      <ion-list id="login-list1">
+        
+
+        <label class="item item-input item-stacked-label" id="login-input1">
+          <span class="input-label">Cod. Condomínio</span>
+          <input type="text" name="cod_condominio" ng-model="user.cod_condominio" placeholder="" required >
+        </label>
+
+        
+        <label class="item item-input item-stacked-label" id="login-input2" name="apto" >
+          <span class="input-label">Apartamento</span>
+          <input type="text" name="cod_condominio" ng-model="user.apt" required>
+        </label>
+      </ion-list>
+      </form>
+    <button ng-click="login()" type="submit" id="login-entrar" class="button button-royal  button-block">Entrar</button>
+    <button ui-sref="cadastro" id="login-cadastro" class="button button-royal  button-block">Cadastro</button>
+  </ion-content>
+</ion-view>

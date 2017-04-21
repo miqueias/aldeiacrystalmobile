@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+b, strong{
+	font-weight: 700;
+}
+
+h2{
+	letter-spacing: 1px;
+	color: #61c1b2;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly]:not(.cloned-text-input),
+textarea[readonly]:not(.cloned-text-input),
+select[readonly]{
+	background: transparent;
+}
+
+#perfil input[disabled],
+#perfil select[disabled],
+#perfil textarea[disabled],
+#perfil input[readonly]:not(.cloned-text-input),
+#perfil textarea[readonly]:not(.cloned-text-input),
+#perfil select[readonly]{
+	background: #fff!important;
+}
+
+.clearfix {display: inline-block;}
+
+.clearfix:after {
+content: " ";
+display: block;
+height: 0;
+clear: both;
+font-size: 0;
+visibility: hidden;
+}
+
+/* Hides from IE-mac */
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+.padding{
+	padding: 15px;
+}
+
+
+/* Barra de Título */
+.brand{
+	background-image: url('../img/brand_aldeia_cristal.png')!important;
+	background-size: 45px!important;
+	background-repeat: no-repeat!important;
+	background-position: right 8px center!important;
+}
+
+.bar.bar-royal .title{
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+/* Telas */
+
+#login{
+	background-image: url('../img/bg-header.png')!important;
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#historico .item{
+	font-size: 12px;
+	margin-bottom: 8px;
+	border: 1px solid #d9dde2;
+	border-radius: 6px;
+	background-color: #faf9f8;
+	-webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.42);
+-moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.42);
+box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.42);
+}
+
+#pedido .item-avatar{
+	position: relative;
+	padding: 14px;
+}
+
+#pedido .item-avatar > img:first-child{
+	left: 12px;
+}
+
+#pedido .item-avatar{
+	padding-left: 66px;
+}
+
+#pedido .item-avatar h2{
+	float: left;
+	line-height: 40px;
+	font-weight: 600;
+}
+
+#pedido .item-avatar input{
+	float: right;
+	width: 50px;
+	text-align: center;
+	padding: 5px!important;
+	background: #e6e6e6;
+}
+
+.pedido #form-pedido label{
+	float: left;
+}
+
+.pedido #form-pedido{
+	width: 100%;
+}
+
+.pedido #form-pedido label{
+	width: 50%;
+	background: #fff;
+}
+
+.pedido #form-pedido label input{
+	height: 34px;
+	padding: 0 16px!important;
+}
+
+.pedido #form-pedido label:last-child,
+.pedido #form-pedido label:last-child input{
+	background: #dcdcdc
+}
+
+.pedido #form-pedido label span.input-label{
+	font-size: 12px;
+	padding-left: 16px;
+}
+
+#pedido .card{
+	width: 90%;
+	margin: 30px auto;
+	text-align: center;
+	padding-left: 55px;
+	background-image: url('../img/alert.png');
+	background-repeat: no-repeat;
+	background-size: 40px auto;
+	background-position: left 16px center;
+
+}
+
+#pedido .card .item{
+	color: #61c1b2;
+	background: transparent;
+}
+
+#entregador .item-avatar{
+	padding: 40px 16px;
+	text-align: center;
+	overflow: visible;
+	margin:  20px 0 15px;
+}
+
+#entregador .item-avatar img{
+	top: -20px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+#entregador .item-avatar h2{
+	font-weight: 600;
+}
+
+#entregador .item-avatar h2 span{
+	font-weight: 400;
+}
+
+#noticias h2{
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+/* Tabs */
+
+.tabs{
+	height: 58px;
+}
+
+.tab-item{
+	color: #fff;
+	padding: 6px 0;
+}
+
+.tab-item,
+.tab-item.tab-item-active,
+.tab-item.active,
+.tab-item.activated{
+	opacity: .95;
+	background: #4c5360;
+}
+
+.tab-item.tab-item-active,
+.tab-item.active,
+.tab-item.activated{
+	color: #61c1b2;
+	opacity: 1;
+}
+
+/* Forms */
+label.item{
+	border: 0;
+	padding-left: 0;
+}
+
+.item input{
+	height: 40px;
+	font-size: 16px;
+	padding: 6px 15px!important;
+	-webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+-moz-appearance: none; /* Remove estilo padrão do FireFox */
+appearance: none; /* Remove estilo padrão do FireFox*/
+}
+
+.input-label{
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.button{
+	min-height: 44px;
+}

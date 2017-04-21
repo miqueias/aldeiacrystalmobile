@@ -1,0 +1,38 @@
+<ion-view title="pedido" id="pedido" class="pedido">
+  <ion-content padding="true" class="has-header">
+   <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <ion-list id="pedido-list2">
+      <ion-item class="item-avatar" id="pedido-list-item1">
+        <img src="img/garrafao.jpg">
+        <h2>Garrafão 5 L</h2>
+        <form id="pedido-form4" class="list">
+            <input type="number" ng-model="pedido.qtd_5l">
+        </form>
+      </ion-item>
+      <ion-item class="item-avatar" id="pedido-list-item2">
+        <img src="img/garrafao.jpg">
+        <h2>Garrafão 20 L</h2>
+        <form id="pedido-form4" class="list">
+            <input type="number"  ng-model="pedido.qtd_20l">
+        </form>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <form id="form-pedido" class="list clearfix">
+      <label class="item item-input item-stacked-label" id="pedido-input11" name="troco">
+        <span class="input-label">Troco para</span>
+        <input type="number"  placeholder="R$">
+      </label>
+      <label class="item item-input item-stacked-label" id="pedido-input12" name="total_pagar">
+        <span class="input-label">Total a pagar</span>
+        <input type="text" ng-model="total"  disabled placeholder="R$ {{pedido.qtd_20l * 8.00 + pedido.qtd_5l * 5.00}}">
+      </label>
+    </form>
+      <div class="card">
+        <div class="item item-text-wrap">
+          Prazo de entrega de até 24 horas úteis.
+        </div>
+      </div>
+    <button  ng-click="confirmarPedido()" id="pedido-button18" class="button button-royal  button-block">Pedir</button>
+  </ion-content>
+</ion-view>

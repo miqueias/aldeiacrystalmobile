@@ -1,0 +1,35 @@
+<ion-view title="Confimar Pedido" id="confiPedido" class="pedido">
+  <ion-content padding="true" class="has-header">
+
+    <div class="card">
+      <div class="item item-text-wrap">
+        <h2>Pedido</h2>
+        <p>2 garrafões de 5 L .</p>
+        <div class="spacer" style="width: 300px; height: 20px;"></div>
+        <h2>Entrega</h2>
+        <p>Ed. Clarita na Rua Ferreiros,312 Janga - Paulista<br>Observação: Terceira rua a esquerda</p>
+      </div>
+    </div>
+    
+    <form id="form-pedido" class="list clearfix">
+      <label class="item item-input item-stacked-label" id="pedido-input11" name="troco">
+        <span class="input-label">Troco para</span>
+        <input type="text" disabled placeholder="R$">
+      </label>
+      <label class="item item-input item-stacked-label" id="pedido-input12" name="total_pagar">
+        <span class="input-label">Total a pagar</span>
+        <input type="text" disabled placeholder="R$ 0, 00">
+      </label>
+    </form>
+
+    <ion-list id="entregador">
+      <ion-item class="item-avatar" id="pedido-list-item2">
+        <img src="img/entregador.jpg">
+        <h2>Entregador: <span>Márcio Souza</span></h2>
+        <h2>Matrícula: <span>908.890.890.88</span></h2>
+      </ion-item>
+    </ion-list>
+    <button  ng-click="confirmarPedido()" id="pedido-button18" class="button button-royal  button-block">Confirmar pedido</button>
+    <button  ui-sref="home.pedido" id="pedido-button18" class="button button-assertive  button-block">Corrigir pedido</button>
+  </ion-content>
+</ion-view>
